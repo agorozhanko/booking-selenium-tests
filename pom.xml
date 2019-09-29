@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenium.version>3.141.59</selenium.version>
-        <webdriverfactory.version>4.3</webdriverfactory.version>
+        <webdriverfactory.version>1.1.47</webdriverfactory.version>
         <htmlelements.version>1.19</htmlelements.version>
         <webdrivermatchers.version>1.2</webdrivermatchers.version>
         <testng.version>6.14.3</testng.version>

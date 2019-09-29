@@ -1,0 +1,25 @@
+package org.booking.test.config;
+
+
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
+
+@Component
+public final class ApplicationContextUtils implements ApplicationContextAware {
+    private static ApplicationContext ctx;
+
+    public static ApplicationContext getApplicationContext() {
+        return ctx;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext appContext) throws BeansException {
+        ctx = appContext;
+    }
+
+    public static <T> T getBean(Class<T> var1) {
+        return getApplicationContext().getAutowireCapableBeanFactory().getBean(var1);
+    }
+}
