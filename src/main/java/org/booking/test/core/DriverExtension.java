@@ -1,9 +1,9 @@
 package org.booking.test.core;
 
 
+import org.booking.test.config.ConfigurationProperties;
 import org.booking.test.utils.CommonDriverUtils;
 import org.booking.test.utils.ScreenshotUtils;
-import org.booking.test.config.ConfigurationProperties;
 import org.hamcrest.Matcher;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;

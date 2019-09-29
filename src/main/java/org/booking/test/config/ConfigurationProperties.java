@@ -29,12 +29,12 @@ public class ConfigurationProperties {
     @Property("test.locale")
     private String locale = "en";
 
-    private ConfigurationProperties(){
+    private ConfigurationProperties() {
         PropertyLoader.newInstance().populate(this);
     }
 
-    public static ConfigurationProperties getInstance(){
-        if (configProperties == null){
+    public static ConfigurationProperties getInstance() {
+        if (configProperties == null) {
             configProperties = new ConfigurationProperties();
         }
         return configProperties;

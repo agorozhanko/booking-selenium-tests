@@ -9,7 +9,7 @@ import org.springframework.context.support.SimpleThreadScope;
 
 @Configuration
 @ComponentScan("org.booking.test")
-public class WorkBeanConfiguration  {
+public class WorkBeanConfiguration {
     @Bean
     public static CustomScopeConfigurer customScopeConfigurer() {
         CustomScopeConfigurer customScopeConfigurer = new CustomScopeConfigurer();
